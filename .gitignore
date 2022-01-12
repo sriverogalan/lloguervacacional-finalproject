@@ -10,8 +10,9 @@ package-lock.json
 # Ignora package.json
 package.json 
 
-# Ignora archivos de configuración SASS
+# Ignora SASS
 sass
 
-# Ignora archivos de configuración SASS
+# Ignora gulpfile.js
 .gulpfile.js
+ 
