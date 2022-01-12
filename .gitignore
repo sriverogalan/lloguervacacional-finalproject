@@ -1,14 +1,5 @@
-<<<<<<< HEAD
-node_modules
-
-gulpfile.js
-
-package.json
-
-package-lock.json
-
 scss
-=======
+
 # Ignora archivos del sistema Mac 
 .DS_store
 
@@ -25,6 +16,7 @@ package.json
 sass
 
 # Ignora gulpfile.js
-.gulpfile.js
+
+gulpfile.js
  
->>>>>>> 69ede1b6b2463b2551aceef04208acda2596fd30
+
