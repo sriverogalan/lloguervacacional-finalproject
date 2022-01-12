@@ -13,4 +13,4 @@ package.json
 # Ignora archivos de configuración SASS
 sass
 
-js
+gulpfile.js
