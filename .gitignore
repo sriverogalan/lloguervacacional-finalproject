@@ -1,3 +1,5 @@
+scss
+
 # Ignora archivos del sistema Mac 
 .DS_store
 
@@ -14,4 +16,7 @@ package.json
 sass
 
 # Ignora gulpfile.js
+
 gulpfile.js
+ 
+

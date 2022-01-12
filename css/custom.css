@@ -6784,6 +6784,7 @@ progress {
   .d-print-none {
     display: none !important;
   }
+
 }
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
@@ -18164,4 +18165,45 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+
+}
+/* Empleiar mapes */
+.danger {
+  color: red;
+}
+
+.stars {
+  color: yellow;
+}
+
+.iesmanacor {
+  color: orange;
+}
+
+.dark {
+  color: #000;
+}
+
+.gray {
+  color: gray;
+}
+
+.p-footer-font-size {
+  font-size: 12px;
+}
+
+.img-size-logo {
+  width: 50px;
+}
+
+.border-bottom-1 {
+  border-bottom: 1px solid white;
+}
+
+.filter-gray {
+  filter: grayscale(1);
+}
+
+.size-stars {
+  font-size: 40px;
 }
