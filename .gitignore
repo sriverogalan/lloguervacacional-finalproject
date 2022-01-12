@@ -14,5 +14,4 @@ package.json
 sass
 
 # Ignora gulpfile.js
-.gulpfile.js
- 
+gulpfile.js
