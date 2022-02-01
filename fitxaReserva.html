@@ -12,7 +12,7 @@
   </head>
 <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-light bg-green">
+    <nav class="navbar navbar-light bg-green sticky-top">
         <div class="container-fluid">
           <a href="index.html" class="navbar-brand"><img src="./img/Logo.png" width="120px"></a>
           <div class="d-flex">
@@ -71,8 +71,22 @@
             </div>  
             <div class="col-12 row justify-content-around">  
               <a href="./gestionaLloguers.html" class="btn col-12 col-md-4 btn btn-secondary ">MODIFICAR RESERVA</a> 
-              <a href="./cancelarReserva.html" class="btn col-12 col-md-4 btn btn-danger ">CANCELAR RESERVA</a>  
-            </div>
+              <a href="./cancelarReserva.html" class="col-6 col-xl-3 btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticmodal" >CANCELAR RESERVA</a>  
+            </div> 
+              <!-- Modal -->
+              <div class="modal fade" id="staticmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-center" id="staticBackdropLabel">Estas segur que vols cancel·lar la reserva #39441?</h5> 
+                  </div>
+                  <div class="modal-body text-center"> 
+                    <a href="./llistatReserves.html" class="btn btn-danger" >SI</a>
+                    <a type="button" class="btn btn-primary" data-bs-dismiss="modal">NO</a>
+                  </div> 
+                </div>
+              </div>
+              </div>
         </div>
     </main>
 
