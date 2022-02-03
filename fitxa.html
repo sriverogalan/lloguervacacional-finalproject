@@ -17,8 +17,16 @@
         </div>
       </nav>
 
+      
 
       <main class="container">
+
+        <nav class="col-9 mx-auto ps-2" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Inici</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Finca es Llobets</li>
+          </ol>
+        </nav>
         
         <div class="col-9 mx-auto py-3 d-flex flex-column flex-md-row flex-lg-row justify-content-between">
           <h2 class="my-auto ps-2">Finca es Llobets</h2>
@@ -116,30 +124,54 @@
           <div class="col-12 col-lg-6 shadow mt-3 mt-md-0 bg-success text-white">
 
             <div class="px-2 py-3 border-bottom">
-              <p>Propietari: Joan Vallbona</p>
+              <span class="fs-5">
+                Propietari: Joan Vallbona
+              </span>
             </div>
 
 
-            <div class="px-2 row">
-              <div class="col-6 py-3 border-bottom">
-              <label for="exampleFormControlInput1" class="form-label">Data entrada</label>
-              <input type="date" class="form-control" id="exampleFormControlInput1" value="2022-03-01"
+            <div class="px-2 row border-bottom">
+              <div class="col-lg-6 mx-auto py-3">
+              <label for="exampleFormControlInput1" class="form-label fs-5">Data entrada</label>
+              <input type="date" class="form-control fs-5" id="exampleFormControlInput1" value="2022-03-01"
               min="2022-03-01" max="2022-10-28">
             </div>
 
-            <div class="col-6 py-3 border-bottom">
-              <label for="exampleFormControlInput1" class="form-label">Data sortida</label>
-              <input type="date" class="form-control" id="exampleFormControlInput1" value="2022-03-03"
+            <div class="col-lg-6 mx-auto py-3">
+              <label for="exampleFormControlInput1" class="form-label fs-5">Data sortida</label>
+              <input type="date" class="form-control fs-5" id="exampleFormControlInput1" value="2022-03-03"
               min="2022-03-03" max="2022-10-30">
             </div>
 
-            <div class="px-2 py-3 border-bottom">
-              <p>Preu per nit: 50€</p>
+            </div>
+
+            <div class="px-2 pt-3 border-bottom d-flex row">
+
+              <dl class="col-6 fs-5">
+                <dt>
+                  Preu per vespre
+                </dt>
+                
+                <dd class="fs-6">
+                  50€
+                </dd>
+              </dl>
+
+              <dl class="col-6 fs-5">
+                <dt>
+                  Preu total
+                </dt>
+                
+                <dd class="fs-6">
+                  150€
+                </dd>
+              </dl>
+              
             </div>
 
             <div class="col-12 py-2 d-flex justify-content-end my-auto">
 
-              <a class="btn btn-light" href="pagament.html">
+              <a class="btn btn-light mx-2" href="pagament.html">
                 Reservar ara
               </a>
               
