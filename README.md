@@ -1,1 +1,1 @@
-# El projecte del lloguer vacacional de en Joan Vallbona i Sergi Rivero
+# El projecte del lloguer vacacional d'en Joan Vallbona i Sergi Rivero
