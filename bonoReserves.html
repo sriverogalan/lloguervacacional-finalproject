@@ -19,14 +19,8 @@
             <a href="login.html"><button class="btn btn-outline-success" type="submit">Ets propietari?</button></a>
           </div>
         </div>
-      </nav>
-
-    <!-- BODY --> 
-
-     <!-- Barra de cerca  -->
+      </nav><!-- Barra de cerca opcional -->
  
-     <!-- Ofertes i destacats -->
-    <main class="container mt-3"> 
       <nav class="col-12" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
         <ol class="breadcrumb"> 
           <li class="breadcrumb-item"><a href="fitxa.html">Finca es Llobets</a></li>
@@ -34,98 +28,111 @@
           <li class="breadcrumb-item active" aria-current="page">Reserva</li>
         </ol>
       </nav>
-        <div class="row border rounded-start p-2 text-center bg-light justify-content-around">  
-            <div class="col-6 row">  
-              <div class="col-12 bg-success rounded text-white">
-                <h3 class="col-12 mt-2 mb-2">Dades de la reserva</h3> 
-              </div> 
-              <div class="row mt-2">
-                <h4 class="fs-5">Nº Reserva</h4>
-                <span>#39441</span>
-              </div> 
-              <div class="row mt-2">
-                <h4 class="fs-5">Entrada</h4>
-                <span>01/03/2022</span>
-              </div> 
-              <div class="row mt-2">
-                <h4 class="fs-5">Sortida</h4>
-                <span>03/03/2022</span>
-              </div>
-    
-              <div class="row mt-2">
-                <h4 class="fs-5">Número de vespres</h4>
-                <br>
-                <div class="d-flex flex-column">
-                  <span>2 vespres</span>
-                  <span>1 adult</span>
-                </div> 
-              </div> 
-              <div class="row mt-2">
-                <h4 class="fs-5">Preu per vespre</h4> 
-                <span>50€/Vespre</span>
-              </div> 
+     
+<main class="container mt-3"> 
 
-              <div class="row mt-2 mb-3 justify-content-center">
-                <h4 class="fs-5">Preu total (+ imposts)</h4> 
-                <h5 class="text-black col-3"><del>199.53€</del></h5>
-                <h5 class="text-danger col-3">154.99€</h5>
-              </div>  
-            </div> 
-            <div class="col-6 row"> 
-              <div class="col-12 bg-success rounded text-white">
-                <h3 class="col-12 mt-2 mb-1">Les teves dades</h3> 
-              </div>
-              <div class="row mt-2">
-                <h4 class="fs-5">Nom</h4>
-                <span>Martin</span>
-              </div> 
-              <div class="row mt-2">
-                <h4 class="fs-5">Llinatges</h4>
-                <span>Valjent</span>
-              </div> 
-              <div class="row mt-2">
-                <h4 class="fs-5">Correu electrònic</h4>
-                <span>martinvaljent@gmail.com</span>
-              </div>
-    
-              <div class="row mt-2">
-                <h4 class="fs-5">Número de telèfon</h4>
-                <span>+34 646 654 546</span>
-                </div>  
-                
-                <div class="row mt-2">
-                  <h4 class="fs-5">Pagament</h4> 
-                  <span>Targeta</span>
-                </div>  
+    <!-- BODY -->  
+  <div class="row border rounded-start p-4 text-center bg-light justify-content-around">
+    <div>
 
-                <div class="row mt-2">
-                  <h4 class="fs-5">Targeta </h4> 
-                  <span> **** **** **** 3564 </span> 
-                </div> 
-              </div> 
-              <div class="col-12 row justify-content-around"> 
-                <a href="./modificarReserva.html" class="btn col-4 btn btn-secondary mt-2 mb-2">MODIFICAR RESERVA</a> 
-                <a href="./cancelarReserva.html" class="col-4 btn btn-danger mt-2 mb-2" data-bs-toggle="modal" data-bs-target="#staticmodal" >CANCELAR RESERVA</a>  
-                  <!-- Modal -->
-                  <div class="modal fade" id="staticmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title text-center" id="staticBackdropLabel">Estas segur que vols cancel·lar la reserva #39441?</h5> 
-                        </div>
-                        <div class="modal-body text-center"> 
-                          <a href="./llistatReserves.html" class="btn btn-danger" >SI</a>
-                          <a type="button" class="btn btn-primary" data-bs-dismiss="modal">NO</a>
-                        </div> 
-                      </div>
-                    </div>
-                    </div>
-              </div>
-          </div> 
-    </main>
+    </div>
+    <div class="col-12 col-md-6 row justify-content-center">   
+      <div class="row  bg-success text-white rounded">
+        <h2 class="my-3">Dades de la reserva</h2> 
+      </div>   
+      <h4 >Nº Reserva</h4>
+      <span>#39441</span> 
+      <h4 >Entrada</h4>
+      <span>01/03/2022</span> 
+      <h4 >Sortida</h4>
+      <span>03/03/2022</span> 
+      <h4 >Número de vespres</h4>  
+      <span>2 vespres</span>
+      <span>1 adult</span>  
+      <h4 >Preu per vespre</h4> 
+      <span>50€/Vespre</span>  
+      <h4>Preu total (+ imposts)</h4> 
+      <div class="justify-content-center row">
+        <h6 class="text-black col-md-3 col-12"><del>199.53€</del></h6>
+        <h6 class="text-danger col-md-3 col-12">154.99€</h6> 
+      </div> 
+    </div> 
+    <div class="col-12 col-md-6 row justify-content-center">    
+    <div class="row  bg-success text-white rounded">
+      <h2 class="my-3">Les teves dades</h2> 
+    </div>  
+      <h4 >Nom</h4>
+      <span>Martin</span>  
+      <h4 >Llinatges</h4>
+      <span>Valjent</span>  
+      <h4 >Correu electrònic</h4>
+      <span>martinvaljent@gmail.com</span>  
+      <h4  >Número de telèfon</h4>
+      <span>+34 646 654 546</span> 
+      <h4 >Pagament</h4> 
+      <span>Targeta</span> 
+      <h4 >Targeta de credit</h4> 
+      <span> **** **** **** 3564 </span>
+    </div>  
+      <a href="./cancelarReserva.html" class="col-md-2 col-12 btn btn-danger mt-2 mb-2 text-center" data-bs-toggle="modal" data-bs-target="#staticmodal" >CANCELAR RESERVA</a>  
+  </div>  
+</main>
 
-
+ <!-- Modal 1-->
+ <div class="modal fade" id="staticmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-center" id="staticBackdropLabel">Estas segur que vols cancel·lar la reserva #39441?</h5> 
+      </div>
+      <div class="modal-body text-center"> 
+        <a href="./llistatReserves.html" class="btn btn-danger" >SI</a>
+        <a type="button" class="btn btn-primary" data-bs-dismiss="modal">NO</a>
+      </div> 
+    </div>
+  </div>
+</div>
        
+ <!-- Modal 2-->
+<div class="modal fade" id="staticmodal2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="static2" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"> Introdueix els canvis que vulguis realitzar a la teva reserva: </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form> 
+            <div class="mb-3"> 
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer"> 
+          <button type="button" class="btn btn-success" data-bs-target="#modalRealitzat" data-bs-toggle="modalRealitzat">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalRealitzat" aria-hidden="true" aria-labelledby="modalRealitzat" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content"> 
+      <div class="modal-body">
+        <h2 class="text-success text-center">
+          Canvis realitzats!
+        </h2>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-danger col-12" data-bs-dismiss="modal" aria-label="Close">Close</button>
+      </div>
+    </div>
+  </div>
+</div>  
+
+
     <!-- FOOTER -->   
 
     <footer class="bg-light text-center text-lg-start ">
