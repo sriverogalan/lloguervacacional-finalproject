@@ -44,7 +44,7 @@
 
         <div class="col-9 col-lg-11 mx-auto my-3 d-flex flex-column flex-lg-row">
           
-          <div id="carouselExampleCaptions" class="carousel slide col-12 col-lg-6 mx-auto" data-bs-ride="carousel">
+          <div id="carouselExampleCaptions" class="carousel slide col-12 col-lg-8 mx-auto pe-lg-2" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -55,7 +55,7 @@
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
             </div>
-            <div class="carousel-inner shadow">
+            <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="/img/lloguer-1-1.jpg" class="d-block w-100 h-100" alt="Imatge del lloguer">
                 <div class="carousel-caption d-none d-md-block">
@@ -123,57 +123,67 @@
             </button>
           </div>
 
-          <div class="col-12 col-lg-6 shadow mt-3 mt-md-0 bg-success text-white">
+          <div class="col-12 col-lg-4 border rounded mt-3 ms-lg-2 mt-md-0 mt-lg-0 bg-light h-100">
 
-            <div class="px-2 py-3 border-bottom">
-              <span class="fs-3">
+            <div class="px-2 py-2">
+              <span class="fs-4">
                 Propietari: Joan Vallbona
               </span>
             </div>
 
 
-            <div class="px-2 row border-bottom">
-              <div class="col-lg-6 mx-auto py-3">
-              <label for="entrada" class="form-label fs-3">Data entrada</label>
-              <input type="date" class="form-control fs-5" id="entrada" value="2022-03-01"
-              min="2022-03-01" max="2022-10-28">
+            <div class="px-2 d-flex">
+
+              <div class="col-md-6 col-lg-6 mx-auto py-3 pe-1">
+                <label for="entrada" class="form-label fs-4">Data entrada</label>
+                <input type="date" class="form-control fs-6" id="entrada" value="2022-03-01"
+                min="2022-03-01" max="2022-10-28">
+              </div>
+
+              <div class="col-md-6 col-lg-6 mx-auto py-3 ps-1">
+                <label for="sortida" class="form-label fs-4">Data sortida</label>
+                <input type="date" class="form-control fs-6" id="sortida" value="2022-03-03"
+                min="2022-03-03" max="2022-10-30">
+              </div>
+
             </div>
 
-            <div class="col-lg-6 mx-auto py-3">
-              <label for="sortida" class="form-label fs-3">Data sortida</label>
-              <input type="date" class="form-control fs-5" id="sortida" value="2022-03-03"
-              min="2022-03-03" max="2022-10-30">
+            <div class="px-2 py-3">
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Tria el número de hostes</option>
+                <option value="1">1 Adult</option>
+                <option value="2">2 Adults i 1 nin</option>
+                <option value="3">2 Adults i més de 1 nin</option>
+              </select>
             </div>
 
-            </div>
+            <div class="px-2 pt-3 d-flex row">
 
-            <div class="px-2 pt-3 border-bottom d-flex row">
-
-              <dl class="col-6 fs-3">
+              <dl class="col-6 fs-4">
                 <dd>
                   Preu per vespre
                 </dd>
                 
-                <dd class="fs-4">
+                <dd class="fs-5">
                   50€
                 </dd>
               </dl>
 
-              <dl class="col-6 fs-3">
+              <dl class="col-6 fs-4">
                 <dd>
                   Preu total
                 </dd>
                 
-                <dd class="fs-4">
+                <dd class="fs-5">
                   150€
                 </dd>
               </dl>
               
             </div>
 
-            <div class="col-12 py-2 d-flex justify-content-end">
+            <div class="col-12 py-3 d-flex justify-content-end">
 
-              <a class="btn btn-light mx-2" href="pagament.html">
+              <a class="btn btn-success mx-2 w-100" href="pagament.html">
                 Reservar ara
               </a>
               
@@ -181,7 +191,7 @@
             </div>
             
 
-          </div>
+          
         </div>
 
         <div class="col-9 col-lg-11 mx-auto py-3">
