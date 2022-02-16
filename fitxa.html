@@ -9,18 +9,118 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-light bg-light sticky-top">
+    <!--nav class="navbar navbar-light bg-light sticky-top">
         <div class="container-fluid">
           <a href="index.html" class="navbar-brand"><img src="./img/Logo.png" width="120px" alt="Logo"></a>
           <form class="d-flex"> 
             <a class="btn btn-outline-success" href="login.html">Ets propietari?</a>
           </form>
         </div>
+      </nav-->
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="/img/Logo.png" alt="logo" width="120px">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            </ul>
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              <img class="rounded-circle" src="/img/cataluna.png" width="20" height="20" alt="idioma-triat">
+              <span class="ms-1">Català</span> 
+            </button>
+
+            
+
+            <a href="formulariIncidencies.html" class="btn btn-success mx-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+              </svg>
+            </a>
+            <a href="" class="btn btn-primary">Ets propietari?</a>
+          </div>
+        </div>
       </nav>
 
       
 
       <main class="container">
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Tria el teu idioma</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+
+
+                <div class="row col-11 mx-auto">
+                  <div class="col-3 py-2">  
+                    <img src="/img/espana.png" width="20" height="20" alt="esp">
+                    <span class="ms-1">Español</span> 
+                  </div>
+
+                  <div class="col-3 py-2">  
+                    <img class="rounded-circle" src="/img/cataluna.png" width="20" height="20" alt="cat">
+                    <span class="ms-1">Català</span> 
+                  </div>
+
+                  <div class="col-3 py-2">
+                    <img src="/img/francia.png" width="20" height="20" alt="fra">
+                    <span class="ms-1">Français</span>
+                  </div>
+
+                  <div class="col-3 py-2">
+                    <img src="/img/alemania.png" width="20" height="20" alt="ale">
+                    <span class="ms-1">Deutsch</span> 
+                  </div>
+
+                  <div class="col-3 py-2">
+                    <img src="/img/reino-unido.png" width="20" height="20" alt="eng">
+                    <span class="ms-1">English(UK)</span> 
+                  </div>
+
+                  <div class="col-3 py-2">
+                    <img src="/img/estados-unidos.png" width="20" height="20" alt="eeuu">
+                    <span class="ms-1">English(USA)</span> 
+                  </div>
+
+                  <div class="col-3 py-2">
+                    <img src="/img/italia.png" width="20" height="20" alt="ita">
+                    <span class="ms-1">Italiano</span> 
+                  </div>
+
+
+                  <div class="col-3 py-2">
+                    <img src="/img/portugal.png" width="20" height="20" alt="por">
+                    <span class="ms-1">Portugues</span> 
+                  </div>
+
+                  <div class="col-3 py-2">
+                    <img src="/img/japon.png" width="20" height="20" alt="jap">
+                    <span class="ms-1">日本</span> 
+                  </div>
+                </div>
+                
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Understood</button>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <nav class="col-9 col-lg-11 mx-auto" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
           <ol class="breadcrumb">
@@ -132,29 +232,20 @@
             </div>
 
 
-            <div class="px-2 d-flex">
+            <div class="px-2 d-flex flex-column flex-md-row flex-lg-row">
 
-              <div class="col-md-6 col-lg-6 mx-auto py-3 pe-1">
+              <div class="col-12 col-md-6 col-lg-6 mx-auto py-3 pe-1">
                 <label for="entrada" class="form-label fs-4">Data entrada</label>
                 <input type="date" class="form-control fs-6" id="entrada" value="2022-03-01"
                 min="2022-03-01" max="2022-10-28">
               </div>
 
-              <div class="col-md-6 col-lg-6 mx-auto py-3 ps-1">
+              <div class="col-12 col-md-6 col-lg-6 mx-auto py-3 ps-1">
                 <label for="sortida" class="form-label fs-4">Data sortida</label>
                 <input type="date" class="form-control fs-6" id="sortida" value="2022-03-03"
                 min="2022-03-03" max="2022-10-30">
               </div>
 
-            </div>
-
-            <div class="px-2 py-3">
-              <select class="form-select" aria-label="Default select example">
-                <option selected>Tria el número de hostes</option>
-                <option value="1">1 Adult</option>
-                <option value="2">2 Adults i 1 nin</option>
-                <option value="3">2 Adults i més de 1 nin</option>
-              </select>
             </div>
 
             <div class="px-2 pt-3 d-flex row">
@@ -276,53 +367,7 @@
             </div>
           </div>
 
-          <!--div class="row col-9 col-lg-11 mx-auto py-3">
-            <h4>Valoracions</h4>
-
-            
-              <div class="col-12 col-lg-4 border rounded my-2 py-2 mx-1">
-                <a href="https://www.flaticon.es/iconos-gratis/espana" title="españa iconos"><img src="/img/espana.png" width="16" height="16" alt=""></a>
-                <p class="pt-2">
-                  <img class="rounded-circle" src="/img/user-1.jpg" width="30" height="30" alt="">
-                  Xisca Parera
-                </p>
-                <p>Una estancia molt completa i amb moltes ganes de tornar el pròxim any.</p>
-              </div>
-
-              <div class="col-12 col-lg-4 border rounded my-2 py-2">
-                <a href="https://www.flaticon.es/iconos-gratis/espana" title="españa iconos"><img src="/img/alemania.png" width="16" height="16" alt=""></a>
-                <p class="pt-2">
-                  <img class="rounded-circle" src="/img/user-2.jpg" width="30" height="30" alt="">
-                  Rolf Volkman
-                </p>
-                <p>Un lloc molt tranquil i molt natural i molt aillat de les zones urbanes. Només un detall, la cuina és un poc estreta.</p>
-              </div>
-
-              <div class="col-12 col-lg-4 border rounded my-2 py-2">
-                <a href="https://www.flaticon.es/iconos-gratis/espana" title="españa iconos"><img src="/img/francia.png" width="16" height="16" alt=""></a>
-                <p class="pt-2">
-                  <img class="rounded-circle" src="/img/user-3.jpg" width="30" height="30" alt="">
-                  Antoine DeLaPlace
-                </p>
-                <p>La terrassa es molt relaxant amb el jardí devora, molt agradable l'experiencia, crec que quan pugui tornaré.</p>
-              </div>
-
-              <div class="col-12 col-lg-4 border rounded my-2 py-2">
-                <a href="https://www.flaticon.es/iconos-gratis/espana" title="españa iconos"><img src="/img/francia.png" width="16" height="16" alt=""></a>
-                <p class="pt-2">
-                  <img class="rounded-circle" src="/img/user-3.jpg" width="30" height="30" alt="">
-                  Antoine DeLaPlace
-                </p>
-                <p>La terrassa es molt relaxant amb el jardí devora, molt agradable l'experiencia, crec que quan pugui tornaré.</p>
-              </div>
-
-              </div>
-              
-            
-
-            
-
-          </div-->
+        
 
 
           <div class="col-9 col-lg-11 mx-auto py-3">
@@ -334,7 +379,7 @@
                 <div class="card-body">
                   <a href="https://www.flaticon.es/iconos-gratis/espana" title="españa iconos"><img src="/img/espana.png" width="16" height="16" alt="Logo país"></a>
                   <p class="pt-2">
-                    <img class="rounded-circle" src="/img/user-1.jpg" width="30" height="30" alt="Perfil de l'usuari">
+                    <img class="rounded-circle" src="/img/user-1.jpg" width="20" height="20" alt="Perfil de l'usuari">
                     Xisca Parera
                   </p>
                   <p>Una estancia molt completa i amb moltes ganes de tornar el pròxim any.</p>
@@ -345,7 +390,7 @@
                 <div class="card-body">
                   <a href="https://www.flaticon.es/iconos-gratis/espana" title="españa iconos"><img src="/img/francia.png" width="16" height="16" alt="Logo país"></a>
                   <p class="pt-2">
-                    <img class="rounded-circle" src="/img/user-3.jpg" width="30" height="30" alt="Perfil de l'usuari">
+                    <img class="rounded-circle" src="/img/user-3.jpg" width="20" height="20" alt="Perfil de l'usuari">
                     Antoine DeLaPlace
                   </p>
                   <p>La terrassa es molt relaxant amb el jardí devora, molt agradable l'experiencia, crec que quan pugui tornaré.</p>
@@ -356,7 +401,7 @@
                 <div class="card-body">
                   <a href="https://www.flaticon.es/iconos-gratis/espana" title="españa iconos"><img src="/img/francia.png" width="16" height="16" alt="Logo país"></a>
                   <p class="pt-2">
-                    <img class="rounded-circle" src="/img/user-3.jpg" width="30" height="30" alt="Perfil de l'usuari">
+                    <img class="rounded-circle" src="/img/user-3.jpg" width="20" height="20" alt="Perfil de l'usuari">
                     Antoine DeLaPlace
                   </p>
                   <p>La terrassa es molt relaxant amb el jardí devora, molt agradable l'experiencia, crec que quan pugui tornaré.</p>
@@ -367,7 +412,7 @@
                 <div class="card-body">
                   <a href="https://www.flaticon.es/iconos-gratis/espana" title="españa iconos"><img src="/img/espana.png" width="16" height="16" alt="Logo país"></a>
                   <p class="pt-2">
-                    <img class="rounded-circle" src="/img/user-1.jpg" width="30" height="30" alt="Perfil de l'usuari">
+                    <img class="rounded-circle" src="/img/user-1.jpg" width="20" height="20" alt="Perfil de l'usuari">
                     Xisca Parera
                   </p>
                   <p>Una estancia molt completa i amb moltes ganes de tornar el pròxim any.</p>
