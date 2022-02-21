@@ -9,50 +9,45 @@
 </head>
 <body>
 
-    <!--nav class="navbar navbar-light bg-light sticky-top">
-        <div class="container-fluid">
-          <a href="index.html" class="navbar-brand"><img src="./img/Logo.png" width="120px" alt="Logo"></a>
-          <form class="d-flex"> 
-            <a class="btn btn-outline-success" href="login.html">Ets propietari?</a>
-          </form>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="/img/Logo.png" alt="logo" width="120px">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        </ul>
+
+        
+
+        <div class="collapse navbar-collapse row" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end"> 
+            <li class="nav-item">
+              <!-- Button trigger modal -->
+                <button type="button" class="text-start btn btn-secondary mx-1 mb-2 mx-lg-2 mb-lg-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  <img id="flagActual" class="rounded-circle" src="/img/cataluna.png" width="15" height="15" alt="idioma-triat">
+                  <span id="textActual" class="ms-1">Català</span> 
+                </button>
+            </li>
+            <li class="nav-item">
+              <a href="./formulariIncidencies.html" class="btn btn-success mx-1 mb-2 mx-lg-2 mb-lg-0" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Contacta amb nosaltres">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-info-circle mt-1" viewBox="0 0 18 20" >
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                  <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                </svg></a> </li>
+            <li class="nav-item">
+              <a href="http://admin.projecte.me:8080/">
+                <button class="btn btn-primary mx-1 mb-2 mx-lg-2 mb-lg-0" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Log-in per propietaris">Ets propietari?</button>
+              </a>
+            </li>
+          </ul>  
         </div>
-      </nav-->
-
-      <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="/img/Logo.png" alt="logo" width="120px">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            </ul>
-
-            
-
-            <div class="collapse navbar-collapse row" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end"> 
-                <li class="nav-item">
-                  <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                      <img id="flagActual" class="rounded-circle my-1" src="/img/cataluna.png" width="20" height="20" alt="idioma-triat">
-                      <span id="textActual" class="ms-1 text-center">Català</span> 
-                    </button>
-                </li>
-                <li class="nav-item">
-                  <a href="./formulariIncidencies.html" class="btn btn-success mx-4 mb-2 mx-lg-2 mb-lg-0" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Contacta amb nosaltres">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-info-circle " viewBox="0 0 18 20" >
-                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                      <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
-                    </svg></a> </li>
-                <li class="nav-item"><a href="login.html"><button class="btn btn-primary mx-4 mb-2 mx-lg-2 mb-lg-0" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Log-in per propietaris">Ets propietari?</button></a></li>
-              </ul>  
-            </div>
-          </div>
-        </div>
-      </nav>
+      </div>
+    </div>
+  </nav>
 
       
 
@@ -70,48 +65,48 @@
 
 
                 <div class="row col-11 mx-auto">
-                  <button class="btn btn-body col-3 py-2" data-bs-dismiss="modal" onclick="canviaEsp()">
+                  <button class="btn btn-body col-3 py-2 text-start" data-bs-dismiss="modal" onclick="canviaEsp()">
                     <img id="espF" src="/img/espana.png" width="20" height="20" alt="esp">
                     <span id="espT" class="ms-1">Español</span> 
                   </button>
 
-                  <button class="btn btn-body col-3 py-2" data-bs-dismiss="modal" onclick="canviaCat()">  
+                  <button class="btn btn-body col-3 py-2 text-start" data-bs-dismiss="modal" onclick="canviaCat()">  
                     <img id="catF" class="rounded-circle" src="/img/cataluna.png" width="20" height="20" alt="cat">
                     <span id="catT" class="ms-1">Català</span> 
                   </button>
 
-                  <button class="btn btn-body col-3 py-2" data-bs-dismiss="modal" onclick="canviaFra()">
+                  <button class="btn btn-body col-3 py-2 text-start" data-bs-dismiss="modal" onclick="canviaFra()">
                     <img id="fraF" src="/img/francia.png" width="20" height="20" alt="fra">
                     <span id="fraT" class="ms-1">Français</span>
                   </button>
 
-                  <button class="btn btn-body col-3 py-2" data-bs-dismiss="modal" onclick="canviaAle()">
+                  <button class="btn btn-body col-3 py-2 text-start" data-bs-dismiss="modal" onclick="canviaAle()">
                     <img id="aleF" src="/img/alemania.png" width="20" height="20" alt="ale">
                     <span id="aleT" class="ms-1">Deutsch</span> 
                   </button>
 
-                  <button class="btn btn-body col-3 py-2" data-bs-dismiss="modal" onclick="canviaEng()">
+                  <button class="btn btn-body col-3 py-2 text-start" data-bs-dismiss="modal" onclick="canviaEng()">
                     <img id="engF" src="/img/reino-unido.png" width="20" height="20" alt="eng">
                     <span id="engT" class="ms-1">English(UK)</span> 
                   </button>
 
-                  <button class="btn btn-body col-3 py-2" data-bs-dismiss="modal" onclick="canviaEeuu()">
+                  <button class="btn btn-body col-3 py-2 text-start" data-bs-dismiss="modal" onclick="canviaEeuu()">
                     <img id="eeuuF" src="/img/estados-unidos.png" width="20" height="20" alt="eeuu">
                     <span id="eeuuT" class="ms-1">English(USA)</span> 
                   </button>
 
-                  <button class="btn btn-body col-3 py-2" data-bs-dismiss="modal" onclick="canviaIta()">
+                  <button class="btn btn-body col-3 py-2 text-start" data-bs-dismiss="modal" onclick="canviaIta()">
                     <img id="itaF" src="/img/italia.png" width="20" height="20" alt="ita">
                     <span id="itaT" class="ms-1">Italiano</span> 
                   </button>
 
 
-                  <button class="btn btn-body col-3 py-2" data-bs-dismiss="modal" onclick="canviaPor()">
+                  <button class="btn btn-body col-3 py-2 text-start" data-bs-dismiss="modal" onclick="canviaPor()">
                     <img id="porF" src="/img/portugal.png" width="20" height="20" alt="por">
                     <span id="porT" class="ms-1">Portugues</span> 
                   </button>
 
-                  <button class="btn btn-body col-3 py-2" data-bs-dismiss="modal" onclick="canviaJap()">
+                  <button class="btn btn-body col-3 py-2 text-start" data-bs-dismiss="modal" onclick="canviaJap()">
                     <img id="japF" src="/img/japon.png" width="20" height="20" alt="jap">
                     <span id="japT" class="ms-1">日本</span> 
                   </button>
@@ -148,18 +143,18 @@
 
         <div class="col-9 col-lg-11 mx-auto my-3 d-flex flex-column flex-lg-row">
           
-          <div id="carouselExampleCaptions" class="carousel slide col-12 col-lg-8 mx-auto pe-lg-2" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <div id="imatgesLloguer" class="carousel slide col-12 col-lg-8 mx-auto pe-lg-2" data-bs-ride="carousel">
+            <!--div class="carousel-indicators bg-danger">
+              <button type="button" data-bs-target="#imatgesLloguer" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#imatgesLloguer" data-bs-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
-            </div>
-            <div class="carousel-inner">
+            </div-->
+            <div class="carousel-inner rounded">
               <div class="carousel-item active">
                 <img src="/img/lloguer-1-1.jpg" class="d-block w-100 h-100" alt="Imatge del lloguer">
                 <div class="carousel-caption d-none d-md-block">
@@ -217,15 +212,40 @@
               </div>
 
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+            <button class="carousel-control-prev d-lg-none" type="button" data-bs-target="#imatgesLloguer" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon " aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <button class="carousel-control-next d-lg-none" type="button" data-bs-target="#imatgesLloguer" data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
+
+            <div class="d-flex justify-content-center pt-2">
+              <div class="d-none d-lg-flex bg-body justify-content-between align-items-center" role="group" aria-label="Basic example">
+                
+                  <img src="/img/lloguer-1-1.jpg" class="mx-1 rounded active" type="button" data-bs-target="#imatgesLloguer" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1" alt="hola" width="75" height="50">
+                
+                  <img src="/img/lloguer-1-2.jpg" class="mx-1 rounded" type="button" data-bs-target="#imatgesLloguer" data-bs-slide-to="1" aria-label="Slide 2" alt="hola" width="75" height="50">
+                
+                  <img src="/img/lloguer-1-3.jpg" class="mx-1 rounded" type="button" data-bs-target="#imatgesLloguer" data-bs-slide-to="2" aria-label="Slide 3" alt="hola" width="75" height="50">
+                
+                  <img src="/img/lloguer-1-4.jpg" class="mx-1 rounded" type="button" data-bs-target="#imatgesLloguer" data-bs-slide-to="3" aria-label="Slide 4" alt="hola" width="75" height="50">
+
+                  <img src="/img/lloguer-1-5.jpg" class="mx-1 rounded" type="button" data-bs-target="#imatgesLloguer" data-bs-slide-to="4" aria-label="Slide 5" alt="hola" width="75" height="50">
+
+                  <img src="/img/lloguer-1-6.jpg" class="mx-1 rounded" type="button" data-bs-target="#imatgesLloguer" data-bs-slide-to="5" aria-label="Slide 6" alt="hola" width="75" height="50">
+
+                  <img src="/img/lloguer-1-7.jpg" class="mx-1 rounded" type="button" data-bs-target="#imatgesLloguer" data-bs-slide-to="6" aria-label="Slide 7" alt="hola" width="75" height="50">
+
+                  <img src="/img/lloguer-1-8.jpg" class="mx-1 rounded" type="button" data-bs-target="#imatgesLloguer" data-bs-slide-to="7" aria-label="Slide 8" alt="hola" width="75" height="50">
+
+              </div>
+            </div>
           </div>
+
+          
 
           <div class="col-12 col-lg-4 border rounded mt-3 ms-lg-2 mt-md-0 mt-lg-0 bg-light h-100">
 
