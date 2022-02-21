@@ -12,14 +12,25 @@
   </head>
 <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-light bg-light sticky-top m-0 border-bottom">
-        <div class="container-fluid">
-          <a href="index.html" class="navbar-brand"><img src="./img/Logo.png" width="120px"></a>
-          <div class="d-flex"> 
-            <a href="login.html"><button class="btn btn-outline-success" type="submit">Ets propietari?</button></a>
-          </div>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-light border-bottom">
+      <div class="container-fluid">
+        <a href="index.html" class="navbar-brand" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Home"><img src="./img/Logo.png" width="120px" alt="first"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse row" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end"> 
+            <li class="nav-item">
+              <a href="./formulariIncidencies.html" class="btn btn-success mx-4 mb-2 mx-lg-2 mb-lg-0" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Contacta amb nosaltres">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-info-circle " viewBox="0 0 18 20" >
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                  <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                </svg></a> </li>
+            <li class="nav-item"><a href="login.html"><button class="btn btn-primary mx-4 mb-2 mx-lg-2 mb-lg-0" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Log-in per propietaris">Ets propietari?</button></a></li>
+          </ul>  
         </div>
-      </nav>
+      </div>
+    </nav>
 
     <!-- BODY --> 
 
@@ -28,39 +39,38 @@
      <!-- Ofertes i destacats -->
     <main class="container mt-3"> 
         <div class="row border rounded-start p-2 text-center bg-light justify-content-around">
-          <div class="col-md-4 col-6">
+          <div class="col-xl-4 col-6">
             <h6 class="col-12 ">
               Zona 
             </h6> 
             <select class="form-select rounded-pill col-12" aria-label="Default select example"> 
               <option value="1">Palma de Mallorca</option>
-              <option value="2" selected>Serra de Tramuntana</option>
+              <option value="2">Serra de Tramuntana</option>
               <option value="3">Raiguer</option> 
               <option value="4">Pla de Mallorca</option>
               <option value="5">Llevant</option>
               <option value="6">Migjorn</option>
             </select>
           </div> 
-          <div class="col-md-2 col-6">
-            <h6 class=" ">
-              Arribada 
+          <div class="col-xl-2 col-6">
+            <h6 class="col-12 "><label for="arribada">
+              Arribada </label>
             </h6>
-            <input class="form-select rounded-pill" type="date" id="birthday" name="birthday" value="2022-03-04" min="2022-03-04" >
-          </div>
-          
-          <div class="col-md-2 col-6">
-            <h6 class="col-12">
-              Sortida
-            </h6>   
-              <input class="col-12 form-select rounded-pill" type="date" id="birthday" name="birthday" value="2022-03-06" min="2022-03-04" >
+            <input class="form-control rounded-pill bg-white col-12 " type="date" id="arribada" name="arribada" value="2022-03-04" min="2022-03-04" > 
           </div> 
-          <div class="col-md-1 col-6">
+          <div class="col-xl-2 col-6">
+            <h6 class="col-12"><label for="arribada">
+              Sortida </label>  
+            </h6>   
+              <input class="form-control rounded-pill bg-white col-12 " type="date" id="sortida" name="sortida" value="2022-03-06" min="2022-03-04" >
+          </div> 
+          <div class="col-xl-1 col-6">
             <h6 class="col-12 ">
               Persones 
             </h6> 
             <select class="form-select rounded-pill col-12" aria-label="Default select example"> 
               <option value="1">1</option>
-              <option value="2" selected>2</option>
+              <option value="2">2</option>
               <option value="3">3</option> 
               <option value="4">4</option>
               <option value="5">5</option>
@@ -71,6 +81,9 @@
             <a href="./resultatsCerca.html" class="btn btn-success rounded-start text-center mt-3"> Cerca  </a>
           </div>
         </div> 
+        </div> 
+        
+          
              <div class="row p-5 justify-content-around border-start border-end ">   
                   <h4 class="text-center ">
                       Serra Tramuntana: 41 allotjaments disponibles
@@ -467,20 +480,20 @@
 
     <footer class="bg-light text-center text-lg-start ">
         
-        <div class="container-fluid p-5 mt-5">
+      <div class="container-fluid p-5 mt-5">
 
-          <div class="row d-flex justify-content-around">
+        <div class="row d-flex justify-content-around">
 
-            <div class="col-6 text-center my-auto">   
-                <h5> © 2022 Copyright: Vacations Mallorca </h5>  
-            </div>
+          <div class="col-6 text-center my-auto">   
+              <h5> © 2022 Copyright: Vacations Mallorca </h5>  
+          </div>
 
-            <div class="col-6 text-center my-auto"> 
-                 <a href="index.html" class="navbar-brand"><img src="./img/Logo.png" width="120px"></a>
-            </div> 
+          <div class="col-6 text-center my-auto"> 
+               <a href="index.html" class="navbar-brand"><img src="./img/Logo.png" width="120px" alt="12"></a>
           </div> 
         </div> 
-      </footer>
+      </div> 
+    </footer>
 </body>
 </html>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
