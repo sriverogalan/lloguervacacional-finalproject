@@ -14,6 +14,9 @@ if (alertTrigger) {
   })
 }
 
+
+//Funcions per canviar el text i la imatge del idioma
+
 function canviaEsp(){
 
   const banderaIdioma = document.querySelector('#flagActual');
