@@ -227,13 +227,14 @@
                   <div class="modal-content">
                     <div class="modal-body">
                       Si esteu segur de que voleu cancel·lar la reserva escribiu "Estic d'acord".
-
                       <div class="mb-3 mt-2">
-                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Estic d'acord">
+                        <input id="cancel" type="text" class="form-control" placeholder="Estic d'acord">
                       </div>
+                      <span class="text-danger" id="noCancel"></span>
                     </div>
                     <div class="modal-footer">
-                      <a class="btn btn-success" href="index.html">Confirmar</a>
+                      <button class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Torna</button>
+                      <button type="button" class="btn btn-success" onclick="validaCancelacio()">Confirmar</button>
                     </div>
                   </div>
                 </div>
