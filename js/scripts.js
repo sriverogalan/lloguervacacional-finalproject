@@ -133,3 +133,130 @@ function canviaJap(){
   banderaIdioma.setAttribute('src', banderaTriada);
   
 }
+
+
+//Validació per cancel·lar reserva
+
+function validaCancelacio(){
+
+  const cancel = document.querySelector('#cancel').value;
+
+  if (cancel != "Estic d'acord"){
+    document.querySelector('#noCancel').innerHTML = "No ho has confirmat" + cancel;
+  } else {
+    window.location.href = "/index.html";
+  }
+}
+
+//Validació formulari contacte
+
+function validaContacte(){
+
+  const name = document.querySelector('#nomContact').value;
+
+  const surname1 = document.querySelector('#llinatge1Contact').value;
+
+  const mail = document.querySelector('#emailContact').value;
+
+  const tel = document.querySelector('#telefonContact').value;
+
+  if (name == ""){
+    document.querySelector('#nomContact').classList.add('bg-danger', 'text-white');
+  } else {
+    document.querySelector('#nomContact').classList.remove('bg-danger', 'text-white');
+  }
+
+  if (surname1 == ""){
+    document.querySelector('#llinatge1Contact').classList.add('bg-danger', 'text-white');
+  } else {
+    document.querySelector('#llinatge1Contact').classList.remove('bg-danger', 'text-white');
+  }
+
+  if (mail == ""){
+    document.querySelector('#emailContact').classList.add('bg-danger', 'text-white');
+  } else {
+    document.querySelector('#emailContact').classList.remove('bg-danger', 'text-white');
+  }
+
+  if (tel == ""){
+    document.querySelector('#telefonContact').classList.add('bg-danger', 'text-white');
+  } else {
+    document.querySelector('#telefonContact').classList.remove('bg-danger', 'text-white');
+  }
+
+
+  if (name == "" || surname1 == "" || mail == "" || tel == ""){
+    document.querySelector('#campsErronis').innerHTML = "Tots els camps obligatoris s'han de rellenar.";
+  } else {
+    window.location.href = "/index.html";
+  }
+
+}
+
+//Validació alta usuari
+
+function validaAlta(){
+
+  const username = document.querySelector('#userSign').value;
+
+  const name = document.querySelector('#nameSign').value;
+
+  const surname1 = document.querySelector('#surname1Sign').value;
+
+  const mail = document.querySelector('#emailSign').value;
+
+  const password = document.querySelector('#passwordSign').value;
+
+  const location = document.querySelector('#ubiSign').value;
+
+  const tel = document.querySelector('#telSign').value;
+
+
+  if (username == ""){
+    document.querySelector('#userSign').classList.add('bg-danger', 'text-white');
+  } else {
+    document.querySelector('#userSign').classList.remove('bg-danger', 'text-white');
+  }
+
+  if (name == ""){
+    document.querySelector('#nameSign').classList.add('bg-danger', 'text-white');
+  } else {
+    document.querySelector('#nameSign').classList.remove('bg-danger', 'text-white');
+  }
+
+  if (surname1 == ""){
+    document.querySelector('#surname1Sign').classList.add('bg-danger', 'text-white');
+  } else {
+    document.querySelector('#surname1Sign').classList.remove('bg-danger', 'text-white');
+  }
+
+  if (mail == ""){
+    document.querySelector('#emailSign').classList.add('bg-danger', 'text-white');
+  } else {
+    document.querySelector('#emailSign').classList.remove('bg-danger', 'text-white');
+  }
+
+  if (password.length < 8){
+    document.querySelector('#passwordSign').classList.add('bg-danger', 'text-white');
+  } else {
+    document.querySelector('#passwordSign').classList.remove('bg-danger', 'text-white');
+  }
+
+  if (location == ""){
+    document.querySelector('#ubiSign').classList.add('bg-danger', 'text-white');
+  } else {
+    document.querySelector('#ubiSign').classList.remove('bg-danger', 'text-white');
+  }
+
+  if (tel == ""){
+    document.querySelector('#telSign').classList.add('bg-danger', 'text-white');
+  } else {
+    document.querySelector('#telSign').classList.remove('bg-danger', 'text-white');
+  }
+
+  if(username == "" || name == "" || surname1 == "" || mail == "" || password.length < 8 || location == "" || tel == ""){
+    document.querySelector('#campsErronis').innerHTML = "Tots els camps obligatoris s'han de rellenar.";
+  } else {
+    window.location.href = "/index.html";
+  }
+}
