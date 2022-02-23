@@ -12,79 +12,158 @@
   </head>
 <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-light border-bottom">
-      <div class="container-fluid">
-        <a href="index.html" class="navbar-brand" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Home"><img src="./img/Logo.png" width="120px" alt="first"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse row" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end"> 
-            <li class="nav-item">
-              <a href="./formulariIncidencies.html" class="btn btn-success mx-4 mb-2 mx-lg-2 mb-lg-0" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Contacta amb nosaltres">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-info-circle " viewBox="0 0 18 20" >
-                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                  <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
-                </svg></a> </li>
-            <li class="nav-item"><a href="login.html"><button class="btn btn-primary mx-4 mb-2 mx-lg-2 mb-lg-0" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Log-in per propietaris">Ets propietari?</button></a></li>
-          </ul>  
+   
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="./index.html">
+      <img src="/img/Logo.png" alt="logo" width="120px">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      </ul> 
+      <div class="collapse navbar-collapse row" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end"> 
+          <li class="nav-item">
+            <!-- Button trigger modal -->
+              <button type="button" class="text-start btn btn-secondary mx-1 mb-2 mx-lg-2 mb-lg-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                <img id="flagActual" class="rounded-circle" src="/img/cataluna.png" width="15" height="15" alt="idioma-triat">
+                <span id="textActual" class="ms-1">Català</span> 
+              </button>
+          </li>
+          <li class="nav-item">
+            <a href="./formulariIncidencies.html" class="btn btn-success mx-1 mb-2 mx-lg-2 mb-lg-0" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Contacta amb nosaltres">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="19" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 18 18" >
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+              </svg></a> </li>
+          <li class="nav-item">
+            <a href="./login.html">
+              <button class="btn btn-primary mx-1 mb-2 mx-lg-2 mb-lg-0" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Log-in per propietaris">Ets propietari?</button>
+            </a>
+          </li>
+        </ul>  
+      </div>
+    </div>
+  </div>
+</nav>
+ 
+
+<!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Tria el teu idioma</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">  
+              <div class="row col-11 mx-auto">
+                <button class="btn btn-body col-3 py-2 text-start" data-bs-dismiss="modal" onclick="canviaEsp()">
+                  <img id="espF" src="/img/espana.png" width="20" height="20" alt="esp">
+                  <span id="espT" class="ms-1">Español</span> 
+                </button>
+
+                <button class="btn btn-body col-3 py-2 text-start" data-bs-dismiss="modal" onclick="canviaCat()">  
+                  <img id="catF" class="rounded-circle" src="/img/cataluna.png" width="20" height="20" alt="cat">
+                  <span id="catT" class="ms-1">Català</span> 
+                </button>
+
+                <button class="btn btn-body col-3 py-2 text-start" data-bs-dismiss="modal" onclick="canviaFra()">
+                  <img id="fraF" src="/img/francia.png" width="20" height="20" alt="fra">
+                  <span id="fraT" class="ms-1">Français</span>
+                </button>
+
+                <button class="btn btn-body col-3 py-2 text-start" data-bs-dismiss="modal" onclick="canviaAle()">
+                  <img id="aleF" src="/img/alemania.png" width="20" height="20" alt="ale">
+                  <span id="aleT" class="ms-1">Deutsch</span> 
+                </button>
+
+                <button class="btn btn-body col-3 py-2 text-start" data-bs-dismiss="modal" onclick="canviaEng()">
+                  <img id="engF" src="/img/reino-unido.png" width="20" height="20" alt="eng">
+                  <span id="engT" class="ms-1">English(UK)</span> 
+                </button>
+
+                <button class="btn btn-body col-3 py-2 text-start" data-bs-dismiss="modal" onclick="canviaEeuu()">
+                  <img id="eeuuF" src="/img/estados-unidos.png" width="20" height="20" alt="eeuu">
+                  <span id="eeuuT" class="ms-1">English(USA)</span> 
+                </button>
+
+                <button class="btn btn-body col-3 py-2 text-start" data-bs-dismiss="modal" onclick="canviaIta()">
+                  <img id="itaF" src="/img/italia.png" width="20" height="20" alt="ita">
+                  <span id="itaT" class="ms-1">Italiano</span> 
+                </button>
+
+
+                <button class="btn btn-body col-3 py-2 text-start" data-bs-dismiss="modal" onclick="canviaPor()">
+                  <img id="porF" src="/img/portugal.png" width="20" height="20" alt="por">
+                  <span id="porT" class="ms-1">Portugues</span> 
+                </button>
+
+                <button class="btn btn-body col-3 py-2 text-start" data-bs-dismiss="modal" onclick="canviaJap()">
+                  <img id="japF" src="/img/japon.png" width="20" height="20" alt="jap">
+                  <span id="japT" class="ms-1">日本</span> 
+                </button>
+              </div> 
+            </div> 
+          </div>
         </div>
       </div>
-    </nav>
-
+ 
     <!-- BODY --> 
 
      <!-- Barra de cerca  -->
  
      <!-- Ofertes i destacats -->
     <main class="container mt-3"> 
-        <div class="row border rounded-start p-2 text-center bg-light justify-content-around">
-          <div class="col-xl-4 col-6">
-            <h6 class="col-12 ">
-              Zona 
-            </h6> 
-            <select class="form-select rounded-pill col-12" aria-label="Default select example"> 
-              <option value="1">Palma de Mallorca</option>
-              <option value="2">Serra de Tramuntana</option>
-              <option value="3">Raiguer</option> 
-              <option value="4">Pla de Mallorca</option>
-              <option value="5">Llevant</option>
-              <option value="6">Migjorn</option>
-            </select>
-          </div> 
-          <div class="col-xl-2 col-6">
-            <h6 class="col-12 "><label for="arribada">
-              Arribada </label>
-            </h6>
-            <input class="form-control rounded-pill bg-white col-12 " type="date" id="arribada" name="arribada" value="2022-03-04" min="2022-03-04" > 
-          </div> 
-          <div class="col-xl-2 col-6">
-            <h6 class="col-12"><label for="arribada">
-              Sortida </label>  
-            </h6>   
-              <input class="form-control rounded-pill bg-white col-12 " type="date" id="sortida" name="sortida" value="2022-03-06" min="2022-03-04" >
-          </div> 
-          <div class="col-xl-1 col-6">
-            <h6 class="col-12 ">
-              Persones 
-            </h6> 
-            <select class="form-select rounded-pill col-12" aria-label="Default select example"> 
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option> 
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-            </select>
-          </div> 
-          <div class=" col-12 mx-auto my-auto  ">
-            <a href="./resultatsCerca.html" class="btn btn-success rounded-start text-center mt-3"> Cerca  </a>
-          </div>
+      <div class="row border rounded-start p-2 text-center bg-light justify-content-around">
+        <div class="col-xl-5 col-6">
+          <h6 class="col-12 ">
+            Zona 
+          </h6> 
+          <select class="form-select rounded-pill col-12" aria-label="Default select example"> 
+            <option value="1">Palma de Mallorca</option>
+            <option value="2">Serra de Tramuntana</option>
+            <option value="3">Raiguer</option> 
+            <option value="4">Pla de Mallorca</option>
+            <option value="5">Llevant</option>
+            <option value="6">Migjorn</option>
+          </select>
         </div> 
+        <div class="col-xl-2 col-6">
+          <h6 class="col-12 ">
+            Arribada 
+          </h6>
+          <input class="form-control rounded-pill bg-white col-12 " type="date" id="arribada" name="arribada" value="2022-03-04" min="2022-03-04" >
         </div> 
+        <div class="col-xl-2 col-6">
+          <h6 class="col-12">
+            Sortida
+          </h6>   
+            <input class="form-control rounded-pill bg-white col-12 " type="date" id="sortida" name="sortida" value="2022-03-06" min="2022-03-04" >
+        </div> 
+        <div class="col-xl-2 col-6">
+          <h6 class="col-12 ">
+            Persones 
+          </h6> 
+          <select class="form-select rounded-pill col-12" aria-label="Default select example"> 
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option> 
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+          </select>
+        </div> 
+        <div class="col-xl-1 col-12 mx-auto my-auto  ">
+          <a href="./resultatsCerca.html" class="btn btn-success rounded-start text-center mt-3"> Cerca  </a>
+        </div>
+      </div> 
         
           
-             <div class="row p-5 justify-content-around border-start border-end ">   
+             <div class="row p-5 justify-content-around border  ">   
                   <h4 class="text-center ">
                       Serra Tramuntana: 41 allotjaments disponibles
                     </h4>
@@ -95,7 +174,7 @@
                         <div id="card-2" class="carousel slide my-auto" data-bs-ride="carousel">
                           <div class="carousel-inner">
                             <div class="carousel-item active">
-                              <img src="./img/casa-busqueda1.jpg" class="d-block w-100" alt="img1">
+                              <img src="./img/casa-busqueda1.jpg" class=" w-100" alt="img1">
                             </div> 
                           </div> 
                         </div> 
