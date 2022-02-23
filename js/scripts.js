@@ -1,6 +1,9 @@
 var alertPlaceholder = document.getElementById('liveAlertPlaceholder')
 var alertTrigger = document.getElementById('liveAlertBtn')
 
+var passwordAlert = document.getElementById('contraAlert')
+var passwordTrigger = document.getElementById('contraButton')
+
 function alert(message, type) {
   var wrapper = document.createElement('div')
   wrapper.innerHTML = '<div class="alert alert-' + type + ' alert-dismissible col-9 mx-auto" role="alert">' + message + '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>'
@@ -14,6 +17,18 @@ if (alertTrigger) {
   })
 }
 
+function alert2(message, type) {
+  var wrapper = document.createElement('div')
+  wrapper.innerHTML = '<div class="alert alert-' + type + ' alert-dismissible col-9 mx-auto" role="alert">' + message + '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>'
+
+  passwordAlert.append(wrapper)
+}
+
+if (passwordTrigger) {
+  passwordTrigger.addEventListener('click', function () {
+    alert2('El correu i la contrassenya han estat guardats correctament.', 'success')
+  })
+}
 
 //Funcions per canviar el text i la imatge del idioma
 
@@ -259,4 +274,83 @@ function validaAlta(){
   } else {
     window.location.href = "/index.html";
   }
+}
+
+
+//Validació pagament
+
+function validaPagament(){
+
+  const name = document.querySelector('#namePay').value;
+
+  const surnames = document.querySelector('#surnamesPay').value;
+
+  const mail = document.querySelector('#emailPay').value;
+
+  const tel = document.querySelector('#telPay').value;
+
+  const boss = document.querySelector('#propertyPay').value;
+
+  const card = document.querySelector('#cardPay').value;
+
+  const caducity = document.querySelector('#caducityPay').value;
+
+  const code = document.querySelector('#codePay').value;
+
+  
+  if (name == ""){
+    document.querySelector('#namePay').classList.add('bg-danger', 'text-white');
+  } else {
+    document.querySelector('#namePay').classList.remove('bg-danger', 'text-white');
+  }
+
+  if (surnames == ""){
+    document.querySelector('#surnamesPay').classList.add('bg-danger', 'text-white');
+  } else {
+    document.querySelector('#surnamesPay').classList.remove('bg-danger', 'text-white');
+  }
+
+  if (mail == ""){
+    document.querySelector('#emailPay').classList.add('bg-danger', 'text-white');
+  } else {
+    document.querySelector('#emailPay').classList.remove('bg-danger', 'text-white');
+  }
+
+  if (tel == ""){
+    document.querySelector('#telPay').classList.add('bg-danger', 'text-white');
+  } else {
+    document.querySelector('#telPay').classList.remove('bg-danger', 'text-white');
+  }
+
+  if (boss == ""){
+    document.querySelector('#propertyPay').classList.add('bg-danger', 'text-white');
+  } else {
+    document.querySelector('#propertyPay').classList.remove('bg-danger', 'text-white');
+  }
+
+  if (card.length != 16){
+    document.querySelector('#cardPay').classList.add('bg-danger', 'text-white');
+  } else {
+    document.querySelector('#cardPay').classList.remove('bg-danger', 'text-white');
+  }
+
+  if (caducity == ""){
+    document.querySelector('#caducityPay').classList.add('bg-danger', 'text-white');
+  } else {
+    document.querySelector('#caducityPay').classList.remove('bg-danger', 'text-white');
+  }
+
+  if (code.length != 3){
+    document.querySelector('#codePay').classList.add('bg-danger', 'text-white');
+  } else {
+    document.querySelector('#codePay').classList.remove('bg-danger', 'text-white');
+  }
+  
+
+  if (name == "" || surnames == "" || mail == "" || tel == "" || boss == "" || card.length != 16 || caducity == "" || code.length != 3){
+    document.querySelector('#errorsPay').innerHTML = "Tots els camps s'han de rellenar.";
+  } else {
+    window.location.href = "/bonoReserves.html";
+  }
+
 }

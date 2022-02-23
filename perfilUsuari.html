@@ -28,15 +28,29 @@
         </div-->
       </div>
 
+      <div id="contraAlert" class="my-2">
+        <!--svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi flex-shrink-0 me-2" viewBox="0 0 16 16">
+          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+        </svg>
+        <div>
+          Els canvis s'han guardat correctament.
+        </div-->
+      </div>
+
 
         <h1 class="text-center py-2">Canvia les teves dades</h1>
 
 
           <div class="row col-9 mx-auto rounded shadow my-4 py-4 d-flex justify-content-center">
 
-            <div class="col-10 mx-auto mx-lg-0 py-2">
+            <div class="col-10 col-lg-5 mx-auto mx-lg-0 py-2">
               <label for="exampleFormControlInput1" class="form-label">Foto de perfil</label>
               <img class="rounded" src="/img/user-1.jpg" width="44" alt="userLog">
+            </div>
+
+            <div class="col-10 col-lg-5 mx-auto mx-lg-0 py-2">
+              <label for="exampleFormControlInput1" class="form-label">Foto de perfil</label>
+              <input type="file" class="form-control" id="exampleFormControlInput1" value="Seleccioni una foto">
             </div>
             
 
@@ -69,16 +83,6 @@
                 <label for="exampleFormControlInput1" class="form-label">Contrassenya</label>
                 <input class="form-control" type="password" aria-label="Disabled input example">
               </div>
-
-              <div class="col-10 col-lg-5 mx-auto mx-lg-0 py-2">
-                <label for="exampleFormControlInput1" class="form-label">Correu electrònic</label>
-                <input class="form-control" type="text" value="johnyvallbona@gmail.com" aria-label="Disabled input example">
-              </div>
-    
-              <div class="col-10 col-lg-5 mx-auto mx-lg-0 py-2">
-                <label for="exampleFormControlInput1" class="form-label">Contrassenya</label>
-                <input class="form-control" type="password" aria-label="Disabled input example">
-              </div>
     
     
               <div class="col-10 col-lg-5 mx-auto mx-lg-0 py-2">
@@ -92,52 +96,33 @@
               </div>
 
 
-              <div class="col-10 col-lg-5 mx-auto mx-lg-0 py-2 d-flex justify-content-center">
-                  <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#canviDades">Canvia</button>
+              <div class="col-10 col-lg-3 mx-auto mx-lg-0 py-2 d-flex flex-column">
+                <button type="button" class="btn btn-primary mx-1 my-1" id="liveAlertBtn" data-bs-toggle="modal" data-bs-target="#canviDades">Guardar</button>
+                <button type="button" class="btn btn-primary mx-1 my-1" data-bs-toggle="modal" data-bs-target="#canviContra">Canvia correu i contrassenya</button>
               </div>
 
-              <div class="modal fade" id="canviDades" tabindex="-1" aria-labelledby="canviDades" aria-hidden="true">
+              <div class="modal fade" id="canviContra" tabindex="-1" aria-labelledby="canviContra" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="canviDades">Canvia les teves dades</h5>
+                      <h5 class="modal-title" id="canviContra">Confirma el correu i la contrassenya</h5>
                     </div>
                     <div class="modal-body">
 
-                      <div class="col-10 mx-auto py-2">
-                        <label for="exampleFormControlInput1" class="form-label">Foto de perfil</label>
-                        <input type="file" class="form-control" id="exampleFormControlInput1" value="Seleccioni una foto">
+                      <div class="col-10 py-2 mx-auto">
+                        <label for="exampleFormControlInput1" class="form-label">Confirma el correu electrònic</label>
+                        <input class="form-control" type="text" aria-label="Disabled input example">
                       </div>
 
                       <div class="col-10 py-2 mx-auto">
-                        <label for="exampleFormControlInput1" class="form-label">Nom d'ususari</label>
-                        <input class="form-control" type="text" value="Joanet20" aria-label="Disabled input example">
-                      </div>
-
-                      <div class="col-10 py-2 mx-auto">
-                        <label for="exampleFormControlInput1" class="form-label">Correu electrònic</label>
-                        <input class="form-control" type="text" value="johnyvallbona@gmail.com" aria-label="Disabled input example">
-                      </div>
-
-                      <div class="col-10 py-2 mx-auto">
-                        <label for="exampleFormControlInput1" class="form-label">Contrassenya</label>
-                        <input class="form-control" type="password" value="Joanet20" aria-label="Disabled input example">
-                      </div>
-
-                      <div class="col-10 py-2 mx-auto">
-                        <label for="exampleFormControlInput1" class="form-label">Direcció</label>
-                        <input class="form-control" type="text" value="Carrer de Felanitx, 32" aria-label="Disabled input example">
-                      </div>
-
-                      <div class="col-10 py-2 mx-auto">
-                        <label for="exampleFormControlInput1" class="form-label">Número de telèfon</label>
-                        <input class="form-control" type="tel" value="696 609 301" aria-label="Disabled input example">
+                        <label for="exampleFormControlInput1" class="form-label">Confirma la contrassenya</label>
+                        <input class="form-control" type="password" aria-label="Disabled input example">
                       </div>
 
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Torna</button>
-                      <button type="button" class="btn btn-success" id="liveAlertBtn" data-bs-dismiss="modal">Guarda els canvis</button>
+                      <button type="button" class="btn btn-primary" id="contraButton" data-bs-dismiss="modal">Guarda els canvis</button>
                     </div>
                   </div>
                 </div>
