@@ -8,7 +8,7 @@
 </head>
 <body>
     
-  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top border-bottom">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <img src="/img/Logo.png" alt="logo" width="120px">
@@ -125,49 +125,49 @@
           <div class="row col-9 mx-auto rounded shadow my-4 py-4 d-flex justify-content-center">
 
             <div class="mb-3 col-10 mx-auto mx-lg-0 py-2">
-              <label for="formFile" class="form-label">Tria una foto de perfil</label>
+              <label for="formFile" class="form-label">Tria una foto de perfil*</label>
               <input class="form-control" type="file" id="formFile">
             </div>
 
             <div class="col-10 col-lg-5 mx-auto mx-lg-0 py-2">
                 <label for="exampleFormControlInput1" class="form-label">Nom d'ususari</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1">
+                <input type="text" class="form-control" id="userSign">
             </div>
 
             <div class="col-10 col-lg-5 mx-auto mx-lg-0 py-2">
                 <label for="exampleFormControlInput1" class="form-label">Nom</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1">
+                <input type="text" class="form-control" id="nameSign">
               </div>
     
               <div class="col-10 col-lg-5 mx-auto mx-lg-0 py-2">
                 <label for="exampleFormControlInput1" class="form-label">Primer llinatge</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1">
+                <input type="text" class="form-control" id="surname1Sign">
               </div>
     
               <div class="col-10 col-lg-5 mx-auto mx-lg-0 py-2">
                 <label for="exampleFormControlInput1" class="form-label">Segon llinatge*</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1">
+                <input type="text" class="form-control" id="surname2Sign">
               </div>
     
               <div class="col-10 col-lg-5 mx-auto mx-lg-0 py-2">
                 <label for="exampleFormControlInput1" class="form-label">Correu electrònic</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1">
+                <input type="email" class="form-control" id="emailSign">
               </div>
     
               <div class="col-10 col-lg-5 mx-auto mx-lg-0 py-2">
                 <label for="exampleFormControlInput1" class="form-label">Contrassenya</label>
-                <input type="password" class="form-control" id="exampleFormControlInput1">
+                <input type="password" class="form-control" id="passwordSign">
               </div>
     
     
               <div class="col-10 col-lg-5 mx-auto mx-lg-0 py-2">
                 <label for="exampleFormControlInput1" class="form-label">Direcció</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1">
+                <input type="text" class="form-control" id="ubiSign">
               </div>
 
               <div class="col-10 col-lg-5 mx-auto mx-lg-0 py-2">
                 <label for="exampleFormControlInput1" class="form-label">Número de telèfon</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1">
+                <input type="text" class="form-control" id="telSign">
               </div>
 
               <div class="col-10 mx-auto mx-lg-0 py-2 d-flex flex-column">
@@ -208,8 +208,10 @@
               </div>
 
               <div class="col-10 col-lg-5 mx-auto mx-lg-0 py-2 d-flex justify-content-center">
-                  <a href="gestionaLloguers.html" class="btn btn-success">Registrar</a>
+                  <button class="btn btn-success" onclick="validaAlta()">Registrar</button>
               </div>
+
+              <span id="errors" class="text-danger text-center"></span>
 
               <h6 class="text-danger text-center pt-2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" fill="currentColor" class="bi bi-exclamation-diamond-fill" viewBox="0 0 16 16">

@@ -8,9 +8,9 @@
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top border-bottom">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="/index.html">
         <img src="/img/Logo.png" alt="logo" width="120px">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,22 +24,27 @@
 
         <div class="collapse navbar-collapse row" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end"> 
+
+            <li class="nav-item">
+              <a href="./formulariIncidencies.html" class="btn btn-success mx-4 mb-2 mx-lg-2 mb-lg-0" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Contacta amb nosaltres">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-info-circle mt-1" viewBox="0 0 18 20" >
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                  <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                </svg>
+              </a> 
+            </li>
+
             <li class="nav-item">
               <!-- Button trigger modal -->
-                <button type="button" class="text-start btn btn-secondary mx-1 mb-2 mx-lg-2 mb-lg-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                <button type="button" class="text-start btn btn-secondary mx-4 mb-2 mx-lg-2 mb-lg-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                   <img id="flagActual" class="rounded-circle" src="/img/cataluna.png" width="15" height="15" alt="idioma-triat">
                   <span id="textActual" class="ms-1">Català</span> 
                 </button>
             </li>
-            <li class="nav-item">
-              <a href="./formulariIncidencies.html" class="btn btn-success mx-1 mb-2 mx-lg-2 mb-lg-0" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Contacta amb nosaltres">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-info-circle mt-1" viewBox="0 0 18 20" >
-                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                  <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
-                </svg></a> </li>
+
             <li class="nav-item">
               <a href="http://admin.projecte.me:8080/">
-                <button class="btn btn-primary mx-1 mb-2 mx-lg-2 mb-lg-0" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Log-in per propietaris">Ets propietari?</button>
+                <button class="btn btn-primary mx-4 mb-2 mx-lg-2 mb-lg-0" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Log-in per propietaris">Ets propietari?</button>
               </a>
             </li>
           </ul>  
@@ -222,13 +227,14 @@
                   <div class="modal-content">
                     <div class="modal-body">
                       Si esteu segur de que voleu cancel·lar la reserva escribiu "Estic d'acord".
-
                       <div class="mb-3 mt-2">
-                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Estic d'acord">
+                        <input id="cancel" type="text" class="form-control" placeholder="Estic d'acord">
                       </div>
+                      <span class="text-danger" id="noCancel"></span>
                     </div>
                     <div class="modal-footer">
-                      <a class="btn btn-success" href="index.html">Confirmar</a>
+                      <button class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Torna</button>
+                      <button type="button" class="btn btn-success" onclick="validaCancelacio()">Confirmar</button>
                     </div>
                   </div>
                 </div>
