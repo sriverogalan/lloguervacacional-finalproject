@@ -31,7 +31,7 @@
 
                 <section class="input-group">
                   <span class="input-group-text" id="basic-addon1">@</span>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <input type="email" class="form-control" id="mailLog" aria-describedby="emailHelp">
                 </section>
             </section>
 
@@ -45,16 +45,16 @@
                       <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
                     </svg>
                   </span>
-                  <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <input type="password" class="form-control" id="passwordLog" aria-describedby="emailHelp">
                 </section>
                 
             </section>
 
 
             <section class="col-12 d-flex pb-3 justify-content-center">
-                <a class="btn btn-success mt-3" href="gestionaLloguers.html">
+                <button type="button" onclick="validarLogin()" class="btn btn-success mt-3" href="gestionaLloguers.html">
                   Iniciar sessió
-                </a>
+                </button>
             </section>
 
 
@@ -62,6 +62,10 @@
                 <a class="col-12 col-lg-6 py-1" href="recuperarContra.html">Has oblidat la teva contrassenya?</a>
                 <a class="col-12 col-lg-6 py-1" href="registrarPropietari.html">Estàs registrat?</a>
             </section>
+
+            <section class="col-12 d-flex pb-3 justify-content-center">
+              <span id="errorsLogin" class="text-danger text-center"></span>
+          </section>
         </form>
 
         

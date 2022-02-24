@@ -352,6 +352,31 @@ function validaPagament(){
   } else {
     window.location.href = "/bonoReserves.html";
   }
-
-  
 }
+
+  //Validació login
+
+  function validarLogin(){
+
+    const mail = document.querySelector('#mailLog').value;
+
+    const password = document.querySelector('#passwordLog').value;
+
+    if (mail == ""){
+      document.querySelector('#mailLog').classList.add('bg-danger', 'text-white');
+    } else {
+      document.querySelector('#mailLog').classList.remove('bg-danger', 'text-white');
+    }
+    
+    if (password.length < 8) {
+      document.querySelector('#passwordLog').classList.add('bg-danger', 'text-white');
+    } else {
+      document.querySelector('#passwordLog').classList.remove('bg-danger', 'text-white');
+    }
+
+    if (mail == "" || password == "" || password.length < 8){
+      document.querySelector('#errorsLogin').innerHTML = "No s'ha pogut iniciar";
+    } else {
+      window.location.href = "/gestionaLloguers.html";
+    }
+  }
