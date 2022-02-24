@@ -353,4 +353,5 @@ function validaPagament(){
     window.location.href = "/bonoReserves.html";
   }
 
+  
 }
