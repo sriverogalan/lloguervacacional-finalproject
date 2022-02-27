@@ -13,10 +13,10 @@
       <a class="navbar-brand" href="/index.html">
         <img src="/img/Logo.png" alt="logo" width="120px">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarButton" aria-controls="navbarButton" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse" id="navbarSupported">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         </ul>
 
@@ -27,7 +27,7 @@
 
             <li class="nav-item">
               <a href="./formulariIncidencies.html" class="btn btn-success mx-4 mb-2 mx-lg-2 mb-lg-0" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Contacta amb nosaltres">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-info-circle mt-1" viewBox="0 0 18 20" >
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 18 20" >
                   <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                   <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
                 </svg>
@@ -125,7 +125,7 @@
 
 
           <div class="col-11 col-lg-6 mb-3 mx-auto">
-          <label for="exampleFormControlInput1" class="form-label">Nom</label>
+          <label for="namePay" class="form-label">Nom</label>
 
           <div class="input-group">
             <span class="input-group-text" id="basic-addon1">
@@ -138,7 +138,7 @@
         </div>
 
           <div class="col-11 col-lg-6 mb-3 mx-auto">
-          <label for="exampleFormControlInput1" class="form-label">Llinatges</label>
+          <label for="surnamesPay" class="form-label">Llinatges</label>
           <div class="input-group">
             <span class="input-group-text" id="basic-addon1">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-at" viewBox="0 0 16 16">
@@ -153,7 +153,7 @@
 
 
         <div class="col-11 col-lg-6 mb-3 mx-auto">
-          <label for="exampleFormControlInput1" class="form-label">Correu electrònic</label>
+          <label for="emailPay" class="form-label">Correu electrònic</label>
 
           <div class="input-group">
             <span class="input-group-text" id="basic-addon1">
@@ -169,7 +169,7 @@
 
 
         <div class="col-11 col-lg-6 mb-3 mx-auto">
-          <label for="exampleFormControlInput1" class="form-label">Número de telèfon</label>
+          <label for="telPay" class="form-label">Número de telèfon</label>
 
           <div class="input-group">
             <span class="input-group-text" id="basic-addon1">
@@ -192,7 +192,7 @@
 
   <div class="row col-10 d-flex flex-wrap mx-auto">
     <div class="col-11 col-lg-6 mx-auto mb-3">
-    <label for="exampleFormControlInput1" class="form-label">Titular de la targeta</label>
+    <label for="propertyPay" class="form-label">Titular de la targeta</label>
 
     <div class="input-group">
       <span class="input-group-text" id="basic-addon1">
@@ -209,7 +209,7 @@
         
   
   <div class="col-11 col-lg-6 mx-auto mb-3">
-    <label for="exampleFormControlInput1" class="form-label">Targeta de crèdit</label>
+    <label for="cardPay" class="form-label">Targeta de crèdit</label>
     <div class="input-group">
       <span class="input-group-text" id="basic-addon1">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card" viewBox="0 0 16 16">
@@ -225,7 +225,7 @@
 
 
   <div class="col-11 col-lg-6 mx-auto mb-3">
-    <label for="exampleFormControlInput1" class="form-label">Data de caducitat</label>
+    <label for="caducityPay" class="form-label">Data de caducitat</label>
 
     <div class="input-group">
       <span class="input-group-text" id="basic-addon1">
@@ -241,7 +241,7 @@
 
 
   <div class="col-11 col-lg-6 mx-auto mb-3">
-    <label for="exampleFormControlInput1" class="form-label">Codi de seguretat</label>
+    <label for="codePay" class="form-label">Codi de seguretat</label>
 
     <div class="input-group">
       <span class="input-group-text" id="basic-addon1">
@@ -280,33 +280,33 @@
           <div class="col-4 col-lg-2">
             <h5>Section</h5>
             <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">About</a></li>
             </ul>
           </div>
     
           <div class="col-4 col-lg-2">
             <h5>Section</h5>
             <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">About</a></li>
             </ul>
           </div>
     
           <div class="col-4 col-lg-2">
             <h5>Section</h5>
             <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">About</a></li>
             </ul>
           </div>
     
