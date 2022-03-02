@@ -358,11 +358,11 @@ function validaPagament(){
 
   function validarLogin(){
 
-    const mail = document.querySelector('#mailLog').value;
+    const email = document.querySelector('#mailLog').value;
 
     const password = document.querySelector('#passwordLog').value;
 
-    if (mail == ""){
+    if (email == ""){
       document.querySelector('#mailLog').classList.add('bg-danger', 'text-white');
     } else {
       document.querySelector('#mailLog').classList.remove('bg-danger', 'text-white');
@@ -374,7 +374,7 @@ function validaPagament(){
       document.querySelector('#passwordLog').classList.remove('bg-danger', 'text-white');
     }
 
-    if (mail == "" || password == "" || password.length < 8){
+    if (email == "" || password == "" || password.length < 8){
       document.querySelector('#errorsLogin').innerHTML = "No s'ha pogut iniciar";
     } else {
       window.location.href = "/gestionaLloguers.html";
