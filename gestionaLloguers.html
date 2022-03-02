@@ -10,7 +10,7 @@
     <!--Importam icones bootstrap-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
   </head>
-<body class="white bg-light-blue">
+<body class=" ">
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light bg-dark-blue  sticky-top border-bottom ">
       <div class="container-fluid">
@@ -21,24 +21,24 @@
           </svg>
         </button>  
         <div class="collapse navbar-collapse row " id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end"> 
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end"> <!-- DESCOMENTAR EL SEGUENT CODI PER BOTO LLOGUERS 
             <li class="nav-item"> 
-              <!-- DESCOMENTAR EL SEGUENT CODI PER BOTO LLOGUERS -->
+              
               <a href="./gestionaLloguers.html" class="btn btn-primary mx-4 mb-2 mx-lg-0 mb-lg-0 " data-bs-toggle="tooltip" data-bs-placement="bottom" title="Gestiona els teus lloguers">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 18">
                   <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
                   <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
                 </svg>Lloguers 
-              </a> 
+              </a> -->
             </li>
             <li class="nav-item">
-              <a href="./perfilUsuari.html" class="btn btn-secondary mx-4 mb-2 mx-lg-2 mb-lg-0" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Perfil">
+              <a href="./perfilUsuari.html" class="btn btn-secondary mx-4 mb-2 mx-lg-2 mb-lg-0" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Perfil" aria-label="Perfil">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 18">
                   <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
                 </svg> Joan</a> 
             </li>
             <li class="nav-item">
-              <a href="./login.html"><button class="btn btn-danger  mx-4 mb-2 mx-lg-2 mb-lg-0" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Sortir"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-left" viewBox="0 0 16 16">
+              <a href="./login.html"><button class="btn btn-danger  mx-4 mb-2 mx-lg-2 mb-lg-0" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Sortir"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" fill="currentColor" class="bi bi-box-arrow-left" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0v2z"/>
               <path fill-rule="evenodd" d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z"/>
               </svg></button></a>
@@ -52,7 +52,7 @@
       
     <main class="container ">
         <div class="col-12 " > 
-             <div class="row border bg-dark-blue p-4 justify-content-around rounded shadow mt-4"> 
+             <div class="row border p-4 justify-content-around rounded shadow mt-4"> 
               <div class="col-12 row justify-content-end">  
                 <a href="./crearLloguer.html" class="btn col-12 col-md-2 btn btn-success"> 
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" fill="currentColor" class="bi bi-plus-square" viewBox="0 0 18 18">
@@ -61,15 +61,16 @@
                   </svg> Afegir un lloguer </a>  
               </div>
                  <h1 class="text-center col-12 mt-3">Els teus lloguers</h1>  
-                 <table class="table white">
-                  <thead class="text-center white">
+                 <div class="table-responsive-sm">
+                   <table class="table  ">
+                  <thead class="text-center ">
                     <tr class="white">
                       <th scope="col">ID</th>  
                       <th scope="col">Nom</th> 
                       <th scope="col" colspan="3" ></th>
                     </tr>
                   </thead>
-                  <tbody class="text-center white">
+                  <tbody class="text-center ">
                     <tr>
                       <th scope="row">001</th> 
                       <td>San Miquel 1</td>
@@ -160,13 +161,15 @@
                       </td>
                     </tr> 
                   </tbody>
-                </table>
+                    </table>
+              </div>
+                 
                 <div class="modal fade" id="modal1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                  <div class="modal-dialog  modal-dialog-centered text-dark">
+                  <div class="modal-dialog modal-dialog-centered text-dark">
                     <div class="modal-content"> 
                       <div class="modal-body row  text-center">
                         <h2 class="col-12">Vols eliminar el teu lloguer?</h2> 
-                        <input type="text" name="texte" id="texte" class="col-12 form-control" placeholder='Introdueix el nom del teu lloguer ex:"San Miquelet 1" per eliminar-lo'>
+                        <input type="text" name="texte" id="texte" class="col-12 form-control  " placeholder='Introdueix el nom del teu lloguer ex:"San Miquelet 1" per eliminar-lo'>
                       </div>
                       <div class="modal-footer">
                         <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Tornar enrere</button>
@@ -188,7 +191,7 @@
 
           <div class="row d-flex justify-content-around">
 
-            <div class="col-6 text-center my-auto">   
+            <div class="col-6 text-center my-auto text-white">   
                 <h5> © 2022 Copyright: Vacations Mallorca </h5>  
             </div>
 
