@@ -18,5 +18,24 @@ sass
 # Ignora gulpfile.js
 
 gulpfile.js
+
+
+# Ignora carpeta dist
+
+dist
+
+#Ignora arxius i carpetes ocults
+
+.*
+
+#Ignora tots es json
+
+*.json
+
+
+*.rar
+
+
+sw.js
  
 
